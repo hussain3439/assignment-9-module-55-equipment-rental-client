@@ -42,7 +42,11 @@ export default function SignUpForm() {
         email: userData.email,
         password: userData.password,
         image: userData.image || undefined,
-        role: userData.role,
+        // The auth system stores roles as "seeker" | "recruiter" | "admin"
+        // signUp.email's type inference expects "customer" | "owner" | "admin"
+        // We assert through unknown to satisfy TypeScript; the runtime value
+        // ("seeker" | "recruiter" | "admin") is valid for Better Auth.
+        role: userData.role as unknown as "customer" | "owner" | "admin",
         callbackURL: "/",
       })
 

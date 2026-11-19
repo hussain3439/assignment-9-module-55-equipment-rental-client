@@ -43,21 +43,21 @@ const menuItemsByRole: Record<Role, MenuItem[]> = {
     { id: "customer-dashboard", name: "Dashboard", url: "/dashboard/customer", icon: LayoutDashboard },
     { id: "customer-rentals", name: "My Rentals", url: "/dashboard/customer/rentals", icon: CalendarCheck },
     { id: "customer-favorites", name: "Favorites", url: "/dashboard/customer/favorites", icon: Heart },
-    { id: "customer-profile", name: "Profile", url: "/dashboard/customer/profile", icon: User },
+    { id: "customer-profile", name: "Profile", url: "/profile", icon: User },
   ],
   owner: [
     { id: "owner-dashboard", name: "Dashboard", url: "/dashboard/owner", icon: LayoutDashboard },
     { id: "owner-add-equipment", name: "Add Equipment", url: "/dashboard/owner/add-equipment", icon: PackagePlus },
     { id: "owner-my-equipment", name: "My Equipment", url: "/dashboard/owner/my-equipment", icon: Package },
     { id: "owner-rentals", name: "My Equipment Rental", url: "/dashboard/owner/rentals", icon: ClipboardList },
-    { id: "owner-profile", name: "My Profile", url: "/dashboard/owner/profile", icon: User },
+    { id: "owner-profile", name: "My Profile", url: "/profile", icon: User },
   ],
   admin: [
     { id: "admin-dashboard", name: "Dashboard", url: "/dashboard/admin", icon: LayoutDashboard },
     { id: "admin-users", name: "All Users", url: "/dashboard/admin/users", icon: Users },
     { id: "admin-equipment", name: "All Equipment", url: "/dashboard/admin/equipment", icon: Package },
     { id: "admin-rentals", name: "All Rentals", url: "/dashboard/admin/rentals", icon: ClipboardList },
-    { id: "admin-profile", name: "My Profile", url: "/dashboard/admin/profile", icon: User },
+    { id: "admin-profile", name: "My Profile", url: "/profile", icon: User },
   ],
 }
 
