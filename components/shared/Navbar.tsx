@@ -44,7 +44,7 @@ export function Navbar() {
   console.log(user?.name)
 
   const navLinks = [
-    { label: "All Equipment", href: "/all-equipment" },
+    { label: "All Equipment", href: "/all-equipments" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "How it works", href: "/works" },
